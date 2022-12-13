@@ -1,4 +1,3 @@
-
 //  En el siguiente ejemplo se tiene un arreglo, mismo que se usa
 //  para guardar las notas de un estudiantes, variable notasEstudiante
 //  Además, se tiene una variable de tipo arreglo de cadena (notasEstudianteCualitativo), de mismo tamaño
@@ -8,21 +7,22 @@
 //  arreglo notasEstudiante se corresponde con la posición 0 del arreglo notasEstudianteCualitativo
 //  Tomar en consideración si una nota tiene un valor mayor o igual 0 y menor o igual 5
 //  la nota tiene un equivalente a Mala; caso contrario se considera Buena
+
 1.  Inicio
 2.  (notasEstudiante(3),i[0-n])
 3.  (notasEstudianteCualitativo(3), x(20)[{a-z}, {A-Z}, {BS}])
 4.  indice, i[0-n]
-5.  notasEstudiante[0] <-- 8
-6.  notasEstudiante[1] <-- 5
-7.  notasEstudiante[2] <-- 2
-8.  Para(indice<--0, indice<3, 1) haga
-9.    Escribir notasEstudiante[indice]
-14. Fin_Para
-15. // presenta el siguiente reporte
-    // 8 es calificación -- Buena
-    // 5 es calificación -- Mala
-    // 2 es calificación -- Mala
-15. Para(indice<--0, indice<3, 1) haga
-16.   //
-17. Fin_Para
+5.  mensaje, x,(100)[{A-Z} , {a-z} , {-} , {BS}] <-- ""
+6.  notasEstudiante[0] <-- 8
+7.  notasEstudiante[1] <-- 5
+8.  notasEstudiante[2] <-- 2
+9.  Para(indice<--0, indice<3, 1) haga
+10.  	Si (notasEstudiante[indice] >= 0) and (notasEstudiante[indice] <= 5) entonces
+11. 		notasEstudianteCualitativo[indice] <-- "Mala"
+12. 	De lo contrario
+13. 		notasEstudianteCualitativo[indice] <-- "Buena"
+14. 	Fin Si
+15. 	mensaje <-- mensaje + notasEstudiante[indice] + "es calificación -- " + notasEstudianteCualitativo[indice] + \n
+16. Fin Para
+17. <<mensaje
 18. Fin

@@ -7,10 +7,11 @@
 //  "Los promedios son:
 //  8.6
 //  9.6"
+
 1.  Inicio
-2.  (notasMatematica(3),i[0-n])
-3.  (notasCiencias(3),i[0-n])
-4.  (promedio(2),d[0-n])
+2.  (notasMatematica(3), d[0-n])
+3.  (notasCiencias(3), d[0-n])
+4.  (promedio(2), d[0-n])
 5.  indice, i[0-n]
 6.  suma, i[0-n] <-- 0
 7.  notasMatematica[0] <-- 7
@@ -19,13 +20,14 @@
 10. notasCiencias[0] <-- 10
 11. notasCiencias[1] <-- 9
 12. notasCiencias[2] <-- 10
-13. Para (indice<--0, indice<3, 1) entonces
+13. Para (indice <-- 0, indice < 3, 1) entonces
 14.   suma <-- suma + notasMatematica[indice]
 15. Fin Para
-16. promedio[0] <-- suma/3  // 33 / 3 = 11
+16. promedio[0] <-- suma / 3  // 33 / 3 = 11
 17. suma <-- 0
-17. Para (indice<--0, indice<3, 1) entonces
+17. Para (indice <-- 0, indice < 3, 1) entonces
 18.   suma <-- suma + notasCiencias[indice]
 19. Fin Para
 20. promedio[1] <-- suma/3
-21. Escribir "Los promedios son:\n" + promedio[0] + "\n" + promedio[1]
+21. Escribir "Los promedios son:" + \n + promedio[0] + \n + promedio[1]
+22. Fin
