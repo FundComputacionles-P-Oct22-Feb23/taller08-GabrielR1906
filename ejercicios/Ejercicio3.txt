@@ -20,4 +20,5 @@ Imprimir todos los valores del arreglo que pertencen a un índice par mayor o ig
 10. 		mensaje <- mensaje + arreglo[indice] + \n
 11. 	Fin Si
 12. Fin Para
-13. Fin
+13. <<mensaje
+14. Fin
